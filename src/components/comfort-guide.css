@@ -1,0 +1,29 @@
+/* Compact reference available from Support and product details. */
+.compact-guide-intro { color: var(--muted); font-size: 13px; margin-bottom: 25px; }
+.comfort-reference-list { margin: 0; }
+.comfort-reference-list > div { display: grid; grid-template-columns: 135px 1fr; gap: 22px; border-top: 1px solid var(--line); padding: 18px 0; }
+.comfort-reference-list dt { font-size: 14px; font-weight: 500; line-height: 1.5; color: var(--espresso); }
+.comfort-reference-list dt small { display: block; color: var(--red-primary); font-size: 10px; font-weight: 600; margin-top: 4px; line-height: 1.5; text-transform: uppercase; letter-spacing: 0.5px; }
+.comfort-reference-list dd { margin: 0; font-size: 12px; line-height: 1.8; color: var(--muted); }
+.compact-guide-note { font-size: 11px; color: var(--muted); padding: 18px 0 22px; border-top: 1px solid var(--line); }
+.support > .support-guide-link { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; text-align: left; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 19px 0; margin: 0 0 30px; font-size: 14px; font-weight: 500; color: var(--espresso); transition: color .2s; }
+.support > .support-guide-link:hover { color: var(--red-primary); }
+.sleep-questions { display: grid; grid-template-columns: 1fr 1.3fr; gap: 10%; background: #ffffff; }
+.sleep-questions h2 { margin: 20px 0; font-size: 48px; color: var(--espresso); }
+.sleep-questions > div > p:not(.eyebrow) { color: var(--muted); font-size: 13px; }
+.sleep-question-list { border-top: 1px solid var(--line); }
+.sleep-question-list details { border-bottom: 1px solid var(--line); }
+.sleep-question-list summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; list-style: none; cursor: pointer; padding: 24px 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--espresso); transition: color .2s; }
+.sleep-question-list summary::-webkit-details-marker { display: none; }
+.sleep-question-list summary svg { flex-shrink: 0; transition: transform .25s, color .25s; color: var(--red-primary); }
+.sleep-question-list details[open] summary { color: var(--red-primary); }
+.sleep-question-list details[open] summary svg { transform: rotate(45deg); color: var(--red-primary); }
+.sleep-question-list details > p { font-size: 13px; line-height: 1.85; color: var(--muted); padding: 0 36px 24px 0; }
+.product-comfort-profile { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 18px 0; margin: 20px 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #ffffff; }
+.product-comfort-profile dt { font-size: 10px; color: var(--muted); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+.product-comfort-profile dd { font-size: 13px; font-weight: 500; margin: 0; color: var(--espresso); }
+.product-guide-link { font-size: 10px; min-height: 44px; margin-top: 10px; color: var(--red-primary); }
+
+@media(max-width: 1200px) { .desktop-nav { gap: 22px; margin-left: 0; } }
+@media(max-width: 760px) { .sleep-questions { grid-template-columns: 1fr; gap: 30px; } .sleep-questions h2 { font-size: 40px; } .sleep-question-list summary { font-size: 14px; } .sleep-question-list details > p { padding-right: 15px; } }
+@media(max-width: 420px) { .comfort-reference-list > div { grid-template-columns: 1fr; gap: 8px; } }
